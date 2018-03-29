@@ -8,6 +8,7 @@ class TemperatureSensor {
   public:
     void begin(int pin, DallasTemperature sensors);
     float readTemperatureCelsius(DallasTemperature sensors);
+    char encodeTemperatureToChar(float temperature);
   private:
     int _pin;
     DeviceAddress deviceAddress;
